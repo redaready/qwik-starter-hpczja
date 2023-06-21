@@ -23,5 +23,10 @@ export const onRequest: RequestHandler = async ({ locale, request }) => {
 export default component$(() => {
   useStyles$(styles);
   console.log(`component getLocale(): ${getLocale()}`);
-  return <>component getLocale(): {getLocale()}</>;
+  return (
+    <>
+      <Header></Header>
+      <main>component getLocale(): {getLocale()}</main>
+    </>
+  );
 });
