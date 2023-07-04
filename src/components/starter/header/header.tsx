@@ -3,7 +3,6 @@ import { QwikLogo } from '../icons/qwik';
 import styles from './header.module.css';
 
 export default component$(() => {
-  console.log(`Header component getLocale(): ${getLocale()}`);
   return (
     <header class={styles.header}>
       <div class={['container', styles.wrapper]}>

@@ -5,16 +5,18 @@ import Counter from '~/components/starter/counter/counter';
 import Hero from '~/components/starter/hero/hero';
 import Infobox from '~/components/starter/infobox/infobox';
 import Starter from '~/components/starter/next-steps/next-steps';
-
+import { register } from 'swiper/element/bundle';
+register();
+const swiperRegister = () => {
+  register();
+};
 export default component$(() => {
   return (
     <>
       <Hero />
       <Starter />
-
       <div role="presentation" class="ellipsis"></div>
       <div role="presentation" class="ellipsis ellipsis-purple"></div>
-
       <div class="container container-center container-spacing-xl">
         <h3>
           You can <span class="highlight">count</span>
@@ -22,7 +24,7 @@ export default component$(() => {
         </h3>
         <Counter />
       </div>
-
+      asdfasdfasdfasdf
       <div class="container container-flex">
         <Infobox>
           <div q:slot="title" class="icon icon-cli">
